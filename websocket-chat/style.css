@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #ececec;
+    font-size: 1em;
+}
+
+header, article, footer {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: 50px 0;
+    color: #333;
+}
+
+#status-label {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+#text-view {
+    float: left;
+    width: 80%;
+    padding: 7px 8px;
+}
+
+#send-button, #stop-button {
+    width: 20%;
+    padding: 7px 10px;
+}
