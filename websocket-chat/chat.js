@@ -25,7 +25,7 @@ window.onload = function () {
     socket.onmessage = function (event) {
         if (typeof event.data === "string") {
             // Display message.
-            label.innerHTML = label.innerHTML + "<br />Server says: " + event.data;
+            label.innerHTML = label.innerHTML + "<br />Server says: <strong>" + event.data + "</strong>";
         }
     }
 
@@ -81,8 +81,8 @@ window.onload = function () {
         if (socket.readyState == WebSocket.OPEN) {
             socket.send(textView.value);
 
+            label.innerHTML = label.innerHTML + "<br />You say: <strong>" + textView.value + "</strong>";
             textView.value = "";
-            label.innerHTML = label.innerHTML + "<br />You say: " + textView.value;
         }
     }
 }
